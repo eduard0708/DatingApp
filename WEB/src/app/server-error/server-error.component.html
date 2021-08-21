@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>Internal server error please contact your administrator, refresh the page to reset!</h2>
+
+<ng-container *ngIf="error">    
+    <h4 class="text-danger">{{error.message}}</h4>
+    <p>What to do next....</p>
+    <ol>
+        <li>Open the chrome dev tools</li>
+        <li>Inspect the network</li>
+        <li>Check the failing request</li>
+        <li>Check in the postman</li>
+    </ol>
+    <p>following is the stack trace</p>
+    <code class="mt-5">{{error.details}}</code>
+</ng-container>
+
+<button class="btn btn-primary" type="button" routerLink='/'>Home</button>
+</div>
