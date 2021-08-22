@@ -24,10 +24,10 @@ namespace API.Entities
         public string Country { get; set; }
         public ICollection<Photo> Photos { get; set; }
 
-        public int GetAget()
-        {
-            return DateOfBirth.CalculateAge();
-        }
+        // public int GetAget()
+        // {
+        //     return DateOfBirth.CalculateAge();
+        // }
 
     }
 }
