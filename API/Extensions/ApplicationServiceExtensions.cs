@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using API.Helpers;
 
 namespace API.Extensions
 {
@@ -15,6 +17,7 @@ namespace API.Extensions
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
         {
+            services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddDbContext<DataContext>(options => options.UseSqlServer(
