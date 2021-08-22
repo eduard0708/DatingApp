@@ -18,6 +18,8 @@ import { TestErrorComponent } from './errors/test-error/test-error.component';
 import { ErrorInterceptor } from './_interceptor/error.interceptor';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ServerErrorComponent } from './server-error/server-error.component';
+import { MemberCardComponent } from './members/member-card/member-card.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -33,6 +35,7 @@ import { ServerErrorComponent } from './server-error/server-error.component';
     TestErrorComponent,
     NotFoundComponent,
     ServerErrorComponent,
+    MemberCardComponent,
 
   ],
   imports: [
@@ -42,7 +45,8 @@ import { ServerErrorComponent } from './server-error/server-error.component';
     ReactiveFormsModule,
     HttpClientModule,
     SharredModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FontAwesomeModule
 
   ],
   providers: [

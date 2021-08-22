@@ -5,7 +5,7 @@ import { Member } from '../_models/member';
 
 const httOptions = {
   headers: new HttpHeaders({
-    Autorization:'Bearer' + JSON.parse(localStorage.getItem('user') || '{}').token
+    Authorization:'Bearer ' + JSON.parse(localStorage.getItem('user') || '{}')?.token
   })
 }
 
