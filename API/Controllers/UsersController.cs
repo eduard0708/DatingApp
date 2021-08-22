@@ -15,6 +15,8 @@ namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
+    [Authorize]
     public class UsersController : ControllerBase
     {
         private readonly IUserRepository _userRepository;
@@ -36,7 +38,7 @@ namespace API.Controllers
             return Ok(_mapper.Map<IEnumerable<MemberDto>>(users));
         }
 
-        // [Authorize]
+    
         [HttpGet("{username}")]
         public async Task<ActionResult<IEnumerable<MemberDto>>> GetUser(string username)
         {

@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { fromEvent, ReplaySubject } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 import { User } from '../_models/user';
 
 @Injectable({
@@ -13,7 +14,7 @@ export class AccountService {
 
   constructor(private http: HttpClient) {}
 
-  baseUrl = 'http://localhost:5000/api/';
+  baseUrl = environment.apiUrl;
 
   login(user: User) {
     return this.http.post<User>(this.baseUrl + 'account/login', user).pipe(
