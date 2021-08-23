@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LIGHT\\Desktop\\DatingApp\\API\\API.csproj": {}
+    "C:\\Users\\Light\\Desktop\\Angular\\DatingApp\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LIGHT\\Desktop\\DatingApp\\API\\API.csproj": {
+    "C:\\Users\\Light\\Desktop\\Angular\\DatingApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LIGHT\\Desktop\\DatingApp\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Light\\Desktop\\Angular\\DatingApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\LIGHT\\Desktop\\DatingApp\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\LIGHT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LIGHT\\Desktop\\DatingApp\\API\\obj\\",
+        "projectPath": "C:\\Users\\Light\\Desktop\\Angular\\DatingApp\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\Light\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Light\\Desktop\\Angular\\DatingApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LIGHT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Light\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
