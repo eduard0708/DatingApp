@@ -1,0 +1,93 @@
+<div *ngIf="member" class="row">
+  <div class="col-4">
+    <h1>Your Profile</h1>
+  </div>
+  <div class="col-8">
+    <div class="alert alert-info">
+      <p>
+        <strong>Information: </strong> You have made changes. Any unsave changes
+        will be lost!
+      </p>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="card">
+      <img
+        src="{{ member.photoUrl || './assets.user.png' }}"
+        alt="{{ member.knownAs }}"
+        class="card-img-top img-thumbnail"
+      />
+      <div class="card-body">
+        <strong>Location:</strong>
+        <p>{{ member.city }}, {{ member.country }}</p>
+      </div>
+      <div class="card-body">
+        <strong>Age:</strong>
+        <p>{{ member.age }}</p>
+      </div>
+      <div class="card-body">
+        <strong>Last Active:</strong>
+        <p>{{ member.lastActive }}</p>
+      </div>
+      <div class="card-body">
+        <strong>Meber since:</strong>
+        <p>{{ member.created }}</p>
+      </div>
+    </div>
+    <div class="card-footer">
+      <div class="btn-group d-flex">
+        <button class="btn btn-success">Save Changes</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-8">
+    <tabset class="member-tabset">
+      <tab heading="About {{ member.knownAs }}">
+        <form #form="ngForm">
+          <h4>Description</h4>
+          <textarea
+            [(ngModel)]="member.introduction"
+            class="form-control"
+            name="introduction"
+            rows="6"
+          ></textarea>
+          <h4 class="mt-2">Looking for</h4>
+          <textarea
+            [(ngModel)]="member.lookingFor"
+            class="form-control"
+            name="lookingFor"
+            rows="6"
+          ></textarea>
+          <h4 class="mt-2">Interest</h4>
+          <textarea
+            [(ngModel)]="member.interest"
+            class="form-control"
+            name="interest"
+            rows="6"
+          ></textarea>
+          <h4 class="mt-2">Location Details:</h4>
+          <div class="form-inline">
+            <label for="city">City:</label>
+            <input
+              [(ngModel)]="member.city"
+              type="text"
+              class="form-control"
+              name="city"
+            />
+            <label for="country">Country:</label>
+            <input
+              [(ngModel)]="member.country"
+              type="text"
+              class="form-control"
+              name="country"
+            />
+          </div>
+        </form>
+      </tab>
+      <tab heading="Photos">
+        <h4>Photo Edit</h4>
+        <p>Photo edit goes here...</p>
+      </tab>
+    </tabset>
+  </div>
+</div>

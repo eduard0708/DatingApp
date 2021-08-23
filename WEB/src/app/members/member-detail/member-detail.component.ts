@@ -19,30 +19,30 @@ export class MemberDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadMember();
-    this.galleryOptions=[
-      {
-        width: '500px',
-        height: '500px',
-        imagePercent:100,
-        thumbnailsColumns: 4,
-        imageAnimation: NgxGalleryAnimation.Slide,
-        preview: false
-      }
-    ]
-    this.galleryImages = this.getImages();
-  }
+  //   this.galleryOptions=[
+  //     {
+  //       width: '500px',
+  //       height: '500px',
+  //       imagePercent:100,
+  //       thumbnailsColumns: 4,
+  //       imageAnimation: NgxGalleryAnimation.Slide,
+  //       preview: false
+  //     }
+  //   ]
+  //   this.galleryImages = this.getImages();
+  // }
 
-  getImages():NgxGalleryImage[] {
-    const imgUrls = [];
-    for (const photo of this.member.photos) {
-      imgUrls.push({
-        small: photo?.url,
-        medium: photo?.url,
-        big: photo?.url
-      })
-    }
-    return imgUrls;
-  }
+  // getImages():NgxGalleryImage[] {
+  //   const imgUrls = [];
+  //   for (const photo of this.member.photos) {
+  //     imgUrls.push({
+  //       small: photo?.url,
+  //       medium: photo?.url,
+  //       big: photo?.url
+  //     })
+  //   }
+  //   return imgUrls;
+   }
 
   loadMember(){
     this.memberService.getMember(this.route.snapshot.paramMap.get('username') || '').subscribe(member => {
