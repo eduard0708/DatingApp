@@ -3,7 +3,7 @@
     <a class="navbar-brand" href="#">Dating App</a>
 
     <a class="navbar-brand" routerLink="/error">Error</a>
-  
+
       <ng-container *ngIf="accountService.curentUser$ |async">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
@@ -21,7 +21,7 @@
               >Messages</a
             >
           </li>
-         
+
         </ul>
       </ng-container>
 
@@ -30,7 +30,7 @@
         *ngIf="accountService.curentUser$ | async as user"
         dropdown
       >
-        <!-- <img src="{{user.photoUrl || './assets/user.png'}}" alt="{{user.username}}">-->
+        <img src="{{user.photoUrl}}" alt="{{user.username}}">
         <a
           class="dropdown-toggle text-light ml-2"
           style="text-decoration: none; cursor: pointer"

@@ -125,7 +125,7 @@ C:\Users\LIGHT\Desktop\DatingApp\API\bin\Debug\net5.0\AutoMapper.Extensions.Micr
 C:\Users\LIGHT\Desktop\DatingApp\API\obj\Debug\net5.0\API.csproj.AssemblyReference.cache
 C:\Users\Light\Desktop\Angular\DatingApp\API\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\Light\Desktop\Angular\DatingApp\API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\Light\Desktop\Angular\DatingApp\API\obj\Debug\net5.0\API.csproj.AssemblyReference.cache
 C:\Users\Light\Desktop\Angular\DatingApp\API\bin\Debug\net5.0\CloudinaryDotNet.dll
 C:\Users\Light\Desktop\Angular\DatingApp\API\bin\Debug\net5.0\Microsoft.Extensions.WebEncoders.dll
 C:\Users\Light\Desktop\Angular\DatingApp\API\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Light\Desktop\Angular\DatingApp\API\obj\Debug\net5.0\API.csproj.AssemblyReference.cache

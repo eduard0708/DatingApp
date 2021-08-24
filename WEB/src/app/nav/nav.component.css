@@ -1,0 +1,11 @@
+.dropdown-toggle, .dropdown-item {
+  cursor: pointer;
+}
+
+img {
+  max-height: 40px;
+  border-radius: 50%;
+  border:2px solid white;
+  margin-right: 10px;
+  display: inline;
+}
