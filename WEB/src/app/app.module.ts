@@ -26,6 +26,8 @@ import { MemberEditComponent } from './members/member-edit/member-edit.component
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { LoadingInterceptor } from './_interceptor/loading.interceptor';
 import { PhotoEditorComponent } from './photo-editor/photo-editor.component';
+import { TextInputComponent } from './_forms/text-input/text-input.component';
+
 
 
 @NgModule({
@@ -44,6 +46,8 @@ import { PhotoEditorComponent } from './photo-editor/photo-editor.component';
     MemberCardComponent,
     MemberEditComponent,
     PhotoEditorComponent,
+    TextInputComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -55,7 +59,8 @@ import { PhotoEditorComponent } from './photo-editor/photo-editor.component';
     BrowserAnimationsModule,
     FontAwesomeModule,
     NgxGalleryModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    ReactiveFormsModule
 
   ],
   providers: [
