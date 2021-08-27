@@ -1,12 +1,7 @@
-<div class="form-group mb-3">
-  <input
-    type="password"
-    class="form-control"
-    [class.is-invalid]= "ngControl.touched && ngControl.invalid"
-    placeholder="Confirm Password"
-    name="password"
-    formControlName="confirmPassword"
-  />
-  <span *ngIf="registerForm.get('confirmPassword').hasError('required')" class="invalid-feedback">Password is required</span>
-  <span *ngIf="registerForm.get('confirmPassword').hasError('isMatching')" class="invalid-feedback">Confirmed Password not matched</span>
-</div>
+<input class="form-control" 
+  [type]="type" 
+  #input 
+  (input)="onChange($event.target)" 
+  (blur)="onTouched()"
+  [disabled]="disabled" 
+  [placeholder]="placeholder">
